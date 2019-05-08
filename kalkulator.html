@@ -35,10 +35,22 @@
                     </div>
                 </nav>
     <div class="forma">
-        <form>
+        <form action="https://formspree.io/ninaristic@hotmail.com" method="POST">
             <p>Unesite željeno ime:</p>
             <div>
                 <input id="polje" type="text" maxlength="15" autocomplete="off">
+            </div>
+            <p>Ime i prezime:</p>
+            <div>
+                <input id="podaci" type="text" maxlength="15" autocomplete="off">
+            </div>
+            <p>Adresa:</p>
+            <div>
+                <input id="podaci" type="text" maxlength="15" autocomplete="off">
+            </div>
+            <p>Telefon:</p>
+            <div>
+                <input id="podaci" type="text" maxlength="15" autocomplete="off">
             </div>
             <div class="input-group">
                 <input value="cir" id="cir" type="radio" name="jezik" checked> 
@@ -78,16 +90,17 @@
                 <label for="izbor7">20 cm</label>
             </div>
             <button class="myButton" value="calculate">izračunaj cenu</button>
+            <button class="myButton" type="submit">poruči</button>
             <p class="cena"></p>
         </form>
     </div>
     <p class="knt">Za više informacija i poručivanje slobodno nas kontaktirajte putem <a target="_blank" href="https://www.facebook.com/Frebelino-drvene-igra%C4%8Dke-i-puzle-1410418622590086/">Facebooka</a>,&nbsp; <a target="_blank" href="https://www.instagram.com/frebelino/?hl=en">Instagrama</a> ili <a href="tel:0693199939">telefona</a>!</p>
 
-    <div class="footer">
-            <a class="underline" href="https://www.facebook.com/Frebelino-drvene-igra%C4%8Dke-i-puzle-1410418622590086/" target="_blank"><i class="fab fa-facebook-square"></i> Frebelino</a>
-            <a class="underline" href="https://www.instagram.com/frebelino/?hl=en" target="_blank"><i class="fab fa-instagram"></i> frebelino</a> 
-            <a class="underline"href="tel:0693199939"><i class="fas fa-phone"></i>069/31-999-39</a>
-        </div>
+    <footer class="footer">
+        <a class="underline" href="https://www.facebook.com/Frebelino-drvene-igra%C4%8Dke-i-puzle-1410418622590086/" target="_blank"><i class="fab fa-facebook-square"></i> Frebelino</a>
+        <a class="underline" href="https://www.instagram.com/frebelino/?hl=en" target="_blank"><i class="fab fa-instagram"></i> frebelino</a> 
+        <a class="underline" href="tel:0693199939"><i class="fas fa-phone"></i>069/31-999-39</a>
+</footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
