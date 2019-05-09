@@ -39,60 +39,63 @@
         </div>
     </nav>
     <div class="forma">
-        <form action="https://mailthis.to/ninaristic@hotmail.com" method="POST">
+        <form action="https://formspree.io/ninaristic@hotmail.com" method="POST">
             <p>Unesite željeno ime:</p>
             <div>
-                <input id="polje" name="name" type="text" maxlength="15" autocomplete="off">
+                <input id="zeljeno-ime" name="Zeljeno Ime" type="text" maxlength="15" autocomplete="off">
             </div>
             <p>Ime i prezime:</p>
             <div>
-                <input id="podaci" name="name" type="text" maxlength="15" autocomplete="off">
+                <input id="ime-prezime" name="Ime i prezime i adresa" type="text" maxlength="15" autocomplete="off">
             </div>
             <p>Adresa:</p>
             <div>
-                <input id="podaci" name="name" type="text" maxlength="15" autocomplete="off">
+                <input id="adresa" name="Ime i prezime i adresa" type="text" maxlength="15" autocomplete="off">
             </div>
             <p>Telefon:</p>
             <div>
-                <input id="podaci" name="name" type="text" maxlength="15" autocomplete="off">
+                <input id="telefon" name="Telefon" type="text" maxlength="15" autocomplete="off">
             </div>
             <div class="input-group">
-                <input value="cir" id="cir" type="radio" name="jezik" checked>
+                <input value="cir" id="cir" type="radio" name="Jezik" checked>
                 <label for="cir">Cirilica</label>
             </div>
             <div class="input-group">
-                <input value="lat" id="lat" type="radio" name="jezik">
+                <input value="lat" id="lat" type="radio" name="Jezik">
                 <label for="lat">Latinica</label>
             </div>
             <p>Visina imena:</p>
             <div class="input-group">
-                <input value="100" id="izbor1" type="radio" name="izbor" checked>
-                <label for="izbor1">5,6 cm</label>
+                <input data-cena="100" value="5.6" id="izbor1" type="radio" name="Visina imena" checked>
+                <label for="izbor1">5.6 cm</label>
             </div>
             <div class="input-group">
-                <input value="150" id="izbor2" type="radio" name="izbor">
+                <input data-cena="150" value="7" id="izbor2" type="radio" name="Visina imena">
                 <label for="izbor2">7 cm</label>
             </div>
             <div class="input-group">
-                <input value="250" id="izbor3" type="radio" name="izbor">
+                <input data-cena="250" value="10" id="izbor3" type="radio" name="Visina imena">
                 <label for="izbor3">10 cm</label>
             </div>
             <div class="input-group">
-                <input value="330" id="izbor4" type="radio" name="izbor">
-                <label for="izbor4">12,5 cm</label>
+                <input data-cena="330" value="12.5" id="izbor4" type="radio" name="Visina imena">
+                <label for="izbor4">12.5 cm</label>
             </div>
             <div class="input-group">
-                <input value="400" id="izbor5" type="radio" name="izbor">
+                <input data-cena="400" value="15" id="izbor5" type="radio" name="Visina imena">
                 <label for="izbor5">15 cm</label>
             </div>
             <div class="input-group">
-                <input value="500" id="izbor6" type="radio" name="izbor">
-                <label for="izbor6">17,5 cm</label>
+                <input data-cena="500" value="17.5" id="izbor6" type="radio" name="Visina imena">
+                <label for="izbor6">17.5 cm</label>
             </div>
             <div class="input-group">
-                <input value="600" id="izbor7" type="radio" name="izbor">
+                <input data-cena="600" value="20" id="izbor7" type="radio" name="Visina imena">
                 <label for="izbor7">20 cm</label>
             </div>
+
+            <input style="display: none" value="0" id="konacna-cena" type="text" name="Konacna cena">
+
             <button class="myButton" value="calculate">izračunaj cenu</button>
             <button class="myButton" value="Send" type="submit">poruči</button>
             <p class="cena"></p>

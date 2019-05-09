@@ -68,12 +68,11 @@ $(document).ready(function() {
           }
         }
     $('.myButton').on('click', function(e) {
-        e.preventDefault(); // sprecava da se forma submituje
-        var name = $('#polje').val();
+        // e.preventDefault(); // sprecava da se forma submituje
+        var name = $('#zeljeno-ime').val();
         var nameLength = name.length;
-        var vrednostRadio = $(".forma input[type='radio']:not([name='jezik']):checked").val(); // prebaciti u int
+        var vrednostRadio = $(".forma input[type='radio']:not([name='Jezik']):checked").data('cena'); // prebaciti u int
         var intVrednost = parseInt(vrednostRadio, 10);
-        var jezik = $('input[name="jezik"]:checked').val();
 
         if(nameLength == 3 && intVrednost == 100){
             nameLength = 4;
@@ -183,7 +182,12 @@ $(document).ready(function() {
         }
         
         var sum = nameLength * intVrednost;
+
+        $('#konacna-cena').val(sum);
         $('.cena').html('Cena je:<br/>' + sum + ' din.');
+
+
+        console.log($('#konacna-cena').val());
     })
 });
 
